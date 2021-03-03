@@ -59,12 +59,12 @@ body{
         
         
 
-        margin-left: 3%;
+        margin-left: 2vw;
         
         
         img{
             height: 2rem;
-            width: rem;
+            //width: rem;
             
             
         }
@@ -74,7 +74,7 @@ body{
     .name{
         position: absolute;
         
-        margin-left: 10%;
+        margin-left: 12%;
         color: white;
         
     }
@@ -93,7 +93,7 @@ body{
         font-size: 1rem;
        
         padding: 0.5%;
-        right: 10vw;
+        right: 5vw;
 
         text-decoration: underline;
         cursor: pointer;
@@ -167,8 +167,8 @@ body{
         &_image{
             display: flex;
             
-            height: 100px;
-            width: 100px;
+            height: 70px;
+            width: 70px;
             
             
         }
@@ -259,7 +259,7 @@ body{
 
     h1{
         
-        font-size: 2rem;
+        font-size: 3vw;
         font-weight: 500;
     }
 
@@ -578,6 +578,8 @@ body{
     .animation{
         position: absolute;
         
+        left: -20%;
+        
     }
 
     #Sysid{
@@ -588,7 +590,7 @@ body{
 
     #androidproject{
         background-color: #3DDC84 ;
-        margin-left: 60%;
+        margin-left: 60vw;
         
     }
 
@@ -609,7 +611,7 @@ body{
         &_mytext{
             position: absolute;
             margin-top: 20%;
-            margin-left: 5%;
+            margin-left: 7%;
             justify-self: center;
             font-size: 2.6vw;
         }
@@ -620,7 +622,7 @@ body{
     .projects{
 
         img{
-            margin-left: -2%;
+            margin-left: -5%;
             margin-top: 1%;
         }
         
@@ -628,8 +630,9 @@ body{
 
             
             
-            margin-left: 2%;
-            width: 40ch;
+            margin-left: 5%;
+            
+            width: 30ch;
             
             
             
@@ -637,15 +640,21 @@ body{
 
         #androidproject{
             
-            margin-left: 2%;
-            width: 40ch;
+            margin-left: 20vw;
+            
+            width: 30ch;
             
             
         }
         #pythonproject{
+
+            img{
+                margin-left: -5%;
+                margin-top: 5%;
+            }
             
-            margin-left: 2%;
-            width: 40ch;
+            margin-left: 5%;
+            width: 30ch;
             
             
         }
@@ -654,14 +663,16 @@ body{
 
     .logos{
         .animation{
-            margin-left: 10%;
+            margin-left: 0%;
             margin-right: 0%;
+            bottom: 20%;
         }
     }
 
     .robotics{
         .es{
-            left: 15%;
+            
+            left: 18%;
             font-size: 2.6vw;
             
         }
