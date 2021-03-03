@@ -59,7 +59,7 @@ body{
         
         
 
-        margin-left: 4rem;
+        margin-left: 3%;
         
         
         img{
@@ -74,7 +74,7 @@ body{
     .name{
         position: absolute;
         
-        margin-left: 10rem;
+        margin-left: 10%;
         color: white;
         
     }
@@ -144,6 +144,8 @@ body{
         justify-content: center;
         align-self: center;
         flex-direction: column;
+
+        font-size: 1.5vw;
         
 
         align-items: center;
@@ -156,7 +158,7 @@ body{
         p{
             font-weight:200;
             
-            font-size: 1.4rem;
+            
             text-indent: 2rem;
             max-width: 40ch;
         }
@@ -220,6 +222,8 @@ body{
         
         
         width: 40ch;
+
+        font-size: 1.5vw;
 
         text-indent: 2rem;
 
@@ -530,7 +534,7 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
     
-    height: 100vh;
+    //height: 100vh;
     
     background-color: #1f2839;
 
@@ -603,15 +607,23 @@ body{
 
     .firstpage{
         &_mytext{
+            position: absolute;
             margin-top: 20%;
+            margin-left: 5%;
+            justify-self: center;
+            font-size: 2.6vw;
+        }
+        .animation{
+            margin-top: 6%;
         }
     } 
     .projects{
         #Sysid{
 
             
-    
+            
             margin-left: 5%;
+            
             
         }
 
@@ -635,9 +647,14 @@ body{
         }
     }
 
-    .es{
-        left: 2rem;
+    .robotics{
+        .es{
+            left: 15%;
+            font-size: 2.6vw;
+            
+        }
     }
+    
 
 
 }

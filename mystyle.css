@@ -49,7 +49,7 @@ body {
 }
 
 .header .myname {
-  margin-left: 4rem;
+  margin-left: 3%;
 }
 
 .header .myname img {
@@ -59,7 +59,7 @@ body {
 
 .header .name {
   position: absolute;
-  margin-left: 10rem;
+  margin-left: 10%;
   color: white;
 }
 
@@ -120,6 +120,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.5vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -131,7 +132,6 @@ body {
 
 .firstpage_mytext p {
   font-weight: 200;
-  font-size: 1.4rem;
   text-indent: 2rem;
   max-width: 40ch;
 }
@@ -171,6 +171,7 @@ body {
   color: #FFFFFF;
   right: 10%;
   width: 40ch;
+  font-size: 1.5vw;
   text-indent: 2rem;
 }
 
@@ -446,7 +447,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
   background-color: #1f2839;
   color: white;
 }
@@ -509,7 +509,15 @@ body {
 
 @media screen and (max-width: 1000px) {
   .firstpage_mytext {
+    position: absolute;
     margin-top: 20%;
+    margin-left: 5%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 2.6vw;
+  }
+  .firstpage .animation {
+    margin-top: 6%;
   }
   .projects #Sysid {
     margin-left: 5%;
@@ -524,8 +532,9 @@ body {
     margin-left: 10%;
     margin-right: 0%;
   }
-  .es {
-    left: 2rem;
+  .robotics .es {
+    left: 15%;
+    font-size: 2.6vw;
   }
 }
 /*# sourceMappingURL=mystyle.css.map */
