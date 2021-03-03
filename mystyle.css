@@ -1,0 +1,531 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a1c4fd), to(#c2e9fb));
+  background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: 'Raleway' , sans-serif;
+}
+
+.separator {
+  background-color: wheat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 60%;
+  height: 0.4px;
+  justify-self: center;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  opacity: 0.1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  z-index: 3;
+  border: 0.5px solid wheat;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 2;
+  background-color: #1f2839;
+  height: 7vh;
+  width: 100%;
+  color: black;
+  font-size: small;
+}
+
+.header .myname {
+  margin-left: 4rem;
+}
+
+.header .myname img {
+  height: 2rem;
+  width: rem;
+}
+
+.header .name {
+  position: absolute;
+  margin-left: 10rem;
+  color: white;
+}
+
+.header #contactme {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 150px;
+  font-size: 1rem;
+  padding: 0.5%;
+  left: 80%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header #contactme img {
+  height: 20px;
+  width: 20px;
+}
+
+.firstpage {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.firstpage .animation {
+  position: absolute;
+  justify-self: flex-start;
+  margin-left: 11%;
+  margin-top: 3%;
+}
+
+.firstpage_mytext {
+  position: absolute;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstpage_mytext h1 {
+  font-weight: 600;
+}
+
+.firstpage_mytext p {
+  font-weight: 200;
+  font-size: 1.4rem;
+  text-indent: 2rem;
+  max-width: 40ch;
+}
+
+.firstpage_mytext_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+
+.robotics {
+  background-color: #1f2839;
+  height: 60vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.robotics .animation {
+  position: absolute;
+  margin-right: 50%;
+  margin-left: -20%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.robotics .es {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #FFFFFF;
+  right: 10%;
+  width: 40ch;
+  text-indent: 2rem;
+}
+
+.logos {
+  background-color: #1f2839;
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logos .animation {
+  position: absolute;
+  margin-left: 30%;
+  margin-right: 10%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.logos h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.logos .text {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #FFFFFF;
+  left: 10%;
+  top: 10%;
+  text-indent: 2rem;
+}
+
+.draganddrop {
+  background-color: #1f2839;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.draganddrop .rules {
+  margin-top: 2rem;
+  color: white;
+}
+
+.draganddrop .image {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-image: url("pngs/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 175px;
+  width: 600px;
+}
+
+.draganddrop .image .holdersl {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 48.7%;
+  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.draganddrop .image .holdersl .arrows {
+  height: 25px;
+  width: 25px;
+}
+
+.draganddrop .image .holdersr {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 48.7%;
+  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.draganddrop .image .holdersr .arrows {
+  height: 25px;
+  width: 25px;
+}
+
+.draganddrop .image .holdersm {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 48.7%;
+  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.draganddrop .image .holdersm .arrows {
+  height: 25px;
+  width: 25px;
+}
+
+.draganddrop .image #left1 {
+  left: 71.7%;
+}
+
+.draganddrop .image #left2 {
+  left: 65.7%;
+}
+
+.draganddrop .image #left3 {
+  left: 59.7%;
+}
+
+.draganddrop .image #left4 {
+  left: 53.7%;
+}
+
+.draganddrop .image #right1 {
+  left: 24%;
+}
+
+.draganddrop .image #right2 {
+  left: 30%;
+}
+
+.draganddrop .image #right3 {
+  left: 36%;
+}
+
+.draganddrop .image #right4 {
+  left: 42%;
+}
+
+.draganddrop .image #mid {
+  left: 47.8%;
+}
+
+.draganddrop .image #resetbut {
+  position: absolute;
+  font-size: larger;
+  font-weight: 600;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8177), color-stop(0%, #ff867a), color-stop(21%, #ff8c7f), color-stop(52%, #f99185), color-stop(78%, #cf556c), to(#b12a5b));
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  width: 45px;
+  -webkit-background-clip: text;
+  color: rgba(250, 250, 250, 0);
+  left: 17%;
+  top: 7%;
+  cursor: pointer;
+}
+
+.draganddrop .image #dropzone2 {
+  position: absolute;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+  left: 54.8%;
+  top: 50%;
+}
+
+.draganddrop .image #dropzone1 {
+  position: absolute;
+  -webkit-transform: translate(49.5%, -50%);
+          transform: translate(49.5%, -50%);
+  left: -0%;
+  top: 50%;
+}
+
+.draganddrop .image .dropzone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 3px dashed black;
+  border-radius: 50%;
+}
+
+.draganddrop .image .dropzone:hover {
+  opacity: 0.5;
+}
+
+.draganddrop .image #d1 {
+  width: 50%;
+  height: 50%;
+  background: black;
+  z-index: 10;
+  cursor: move;
+}
+
+.draganddrop .sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: drop 1px 2px 2px;
+          box-shadow: drop 1px 2px 2px;
+  height: 20%;
+  z-index: 2;
+}
+
+.draganddrop #linkedin {
+  height: 40px;
+  width: 40px;
+}
+
+.draganddrop #github {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 40%;
+}
+
+.draganddrop .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1a1414;
+  height: 15%;
+  width: 100%;
+  bottom: 0;
+  color: darkgray;
+  font-size: small;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: #1f2839;
+  color: white;
+}
+
+.projects h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.projects img {
+  height: 30px;
+  -webkit-transition: height .5s ease-in-out;
+  transition: height .5s ease-in-out;
+  font-style: oblique;
+}
+
+.projects .project {
+  width: 30rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  -webkit-clip-path: circle(7% at 8% 17%);
+          clip-path: circle(7% at 8% 17%);
+  -webkit-transition: -webkit-clip-path .5s ease-in-out;
+  transition: -webkit-clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
+}
+
+.projects .project:hover {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.projects .project:hover img {
+  height: 60px;
+}
+
+.projects .animation {
+  position: absolute;
+}
+
+.projects #Sysid {
+  background-color: #c06318;
+  margin-left: 35%;
+}
+
+.projects #androidproject {
+  background-color: #3DDC84;
+  margin-left: 60%;
+}
+
+.projects #pythonproject {
+  background-color: #33b2e4;
+  margin-left: 35%;
+}
+
+@media screen and (max-width: 1000px) {
+  .firstpage_mytext {
+    margin-top: 20%;
+  }
+  .projects #Sysid {
+    margin-left: 5%;
+  }
+  .projects #androidproject {
+    margin-left: 5%;
+  }
+  .projects #pythonproject {
+    margin-left: 5%;
+  }
+  .logos .animation {
+    margin-left: 10%;
+    margin-right: 0%;
+  }
+  .es {
+    left: 2rem;
+  }
+}
+/*# sourceMappingURL=mystyle.css.map */
