@@ -79,7 +79,7 @@ body {
   width: 9rem;
   font-size: 1rem;
   padding: 0.5%;
-  left: 70%;
+  right: 10vw;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -455,7 +455,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: white;
 }
@@ -471,8 +471,8 @@ body {
   width: 30rem;
   padding: 1.5rem;
   border-radius: 15px;
-  -webkit-clip-path: circle(7% at 8% 17%);
-          clip-path: circle(7% at 8% 17%);
+  -webkit-clip-path: circle(7% at 8% 18%);
+          clip-path: circle(7% at 8% 18%);
   -webkit-transition: -webkit-clip-path .5s ease-in-out;
   transition: -webkit-clip-path .5s ease-in-out;
   transition: clip-path .5s ease-in-out;
@@ -519,14 +519,21 @@ body {
   .firstpage .animation {
     margin-top: 6%;
   }
+  .projects img {
+    margin-left: -2%;
+    margin-top: 1%;
+  }
   .projects #Sysid {
-    margin-left: 5%;
+    margin-left: 2%;
+    width: 40ch;
   }
   .projects #androidproject {
-    margin-left: 5%;
+    margin-left: 2%;
+    width: 40ch;
   }
   .projects #pythonproject {
-    margin-left: 5%;
+    margin-left: 2%;
+    width: 40ch;
   }
   .logos .animation {
     margin-left: 10%;
