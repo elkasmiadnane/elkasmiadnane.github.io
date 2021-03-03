@@ -76,10 +76,10 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 150px;
+  width: 9rem;
   font-size: 1rem;
   padding: 0.5%;
-  left: 80%;
+  left: 70%;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -242,15 +242,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 175px;
-  width: 600px;
+  height: 10rem;
+  width: 20rem;
 }
 
 .draganddrop .image .holdersl {
   position: absolute;
   height: 25px;
   width: 25px;
-  top: 48.7%;
+  top: 41.5%;
   border: 1px solid red;
   border-radius: 50%;
   cursor: pointer;
@@ -265,7 +265,7 @@ body {
   position: absolute;
   height: 25px;
   width: 25px;
-  top: 48.7%;
+  top: 41.5%;
   border: 1px solid red;
   border-radius: 50%;
   cursor: pointer;
@@ -280,7 +280,7 @@ body {
   position: absolute;
   height: 25px;
   width: 25px;
-  top: 48.7%;
+  top: 41.5%;
   border: 1px solid red;
   border-radius: 50%;
   cursor: pointer;
@@ -292,39 +292,39 @@ body {
 }
 
 .draganddrop .image #left1 {
-  left: 71.7%;
+  left: 86.9%;
 }
 
 .draganddrop .image #left2 {
-  left: 65.7%;
+  left: 76.5%;
 }
 
 .draganddrop .image #left3 {
-  left: 59.7%;
+  left: 66.2%;
 }
 
 .draganddrop .image #left4 {
-  left: 53.7%;
+  left: 55.9%;
 }
 
 .draganddrop .image #right1 {
-  left: 24%;
+  left: 5%;
 }
 
 .draganddrop .image #right2 {
-  left: 30%;
+  left: 15.2%;
 }
 
 .draganddrop .image #right3 {
-  left: 36%;
+  left: 25.4%;
 }
 
 .draganddrop .image #right4 {
-  left: 42%;
+  left: 35.6%;
 }
 
 .draganddrop .image #mid {
-  left: 47.8%;
+  left: 45.8%;
 }
 
 .draganddrop .image #resetbut {
