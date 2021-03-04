@@ -332,11 +332,8 @@ body {
   position: absolute;
   font-size: larger;
   font-weight: 600;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff8177), color-stop(0%, #ff867a), color-stop(21%, #ff8c7f), color-stop(52%, #f99185), color-stop(78%, #cf556c), to(#b12a5b));
-  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
   width: 45px;
-  -webkit-background-clip: text;
-  color: rgba(250, 250, 250, 0);
+  color: sienna;
   left: 17%;
   top: 7%;
   cursor: pointer;
@@ -429,11 +426,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #1a1414;
-  height: 15%;
+  height: 12%;
   width: 100%;
   bottom: 0;
   color: darkgray;
   font-size: small;
+}
+
+.draganddrop .hint {
+  margin-top: 9rem;
+  color: white;
 }
 
 .projects {
