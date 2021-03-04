@@ -49,4 +49,8 @@ body {
   border: none;
   border-bottom: 1px solid cornsilk;
 }
+
+#submit:hover {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=contactme.css.map */

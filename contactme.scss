@@ -37,6 +37,8 @@ body{
 *{
     width: 350px;
     color: cornsilk;
+
+    
     
 }
 
@@ -51,4 +53,8 @@ body{
     background-color:  #1f2839;
     border: none;
     border-bottom: 1px solid cornsilk;
+}
+
+#submit:hover{
+    opacity: 0.5;
 }
