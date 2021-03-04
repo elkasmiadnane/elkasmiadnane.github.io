@@ -35,7 +35,8 @@ let holdersr = [document.getElementById('right1'),document.getElementById('right
 
                 
 
-document.getElementById('hint1').style.opacity = '0';
+//document.getElementById('hint1').style.opacity = '0';
+
 lefts.forEach(element => {
     element.addEventListener("click",()=>{
         let nxt = element.parentElement.nextElementSibling;
@@ -81,6 +82,8 @@ reset.addEventListener('click',()=>{
 
     if (counter>4){
         document.getElementById('hint1').style.opacity = '100';
+
+        document.getElementById('hint1').innerHTML = 'Hint 1 : You probably should consider freeing space to move the arrows to their home direction';
     }
 
     if(counter>8){
