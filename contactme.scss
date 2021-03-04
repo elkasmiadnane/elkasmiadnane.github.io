@@ -1,0 +1,54 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    
+    box-sizing: border-box;
+
+    font-family: 'Raleway' , sans-serif;
+
+    
+
+    
+
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    left: 10vw;
+    right: 10vw;
+    
+    background-color: #1f2839;
+    width: 500px;
+    height: 100vh;
+}
+
+*{
+    width: 350px;
+    color: cornsilk;
+    
+}
+
+
+.holder:not(#message){
+    height: 35px;
+}
+
+.holder:not(h1){
+    
+    font-weight: 300;
+    background-color:  #1f2839;
+    border: none;
+    border-bottom: 1px solid cornsilk;
+}

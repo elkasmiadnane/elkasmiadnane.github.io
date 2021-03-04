@@ -17,6 +17,8 @@ let reset = document.getElementById('resetbut');
 
 let gameimage = document.getElementById('gameimage');
 
+let counter = 0;
+
 
 
 let lefts = [la1,la2,la3,la4];
@@ -28,9 +30,12 @@ let holdersl = [document.getElementById('left1'),document.getElementById('left2'
 let holdersr = [document.getElementById('right1'),document.getElementById('right2'),
                 document.getElementById('right3'),document.getElementById('right4')];
 
+
+
+
                 
 
-
+document.getElementById('hint1').style.opacity = '0';
 lefts.forEach(element => {
     element.addEventListener("click",()=>{
         let nxt = element.parentElement.nextElementSibling;
@@ -71,6 +76,19 @@ rights.forEach(element => {
 
 reset.addEventListener('click',()=>{
 
+
+    counter++;
+
+    if (counter>4){
+        document.getElementById('hint1').style.opacity = '100';
+    }
+
+    if(counter>8){
+        
+
+        document.getElementById('hint1').innerHTML = 'Hint 2 : Not having two arrows with same direction next to each other is the way to go'
+    }
+
     for( i = 0 ; i < 4 ; i++){
         holdersl[i].appendChild(lefts[i]);
         holdersr[i].appendChild(rights[i]);
@@ -89,7 +107,7 @@ gameimage.addEventListener('click' , ()=>{
         ra3.parentElement.className == 'holdersl' && ra4.parentElement.className == 'holdersl'
         
         ){
-        alert("Congratulations champ !!!!! ");
+        setTimeout(alert("Congratulations champ !!!!! "),500);
     }
     
 
@@ -110,3 +128,7 @@ window.onscroll = function(){
         document.getElementById('myname').style.opacity = '0';
     }
 };
+
+document.getElementById('contactme').addEventListener('click', ()=>{
+    window.open('contactme.html');
+})
