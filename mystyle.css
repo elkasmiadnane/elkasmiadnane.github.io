@@ -229,7 +229,7 @@ body {
 }
 
 .draganddrop .rules {
-  margin-top: 2rem;
+  margin-top: 5vh;
   color: white;
 }
 
@@ -492,7 +492,6 @@ body {
 
 .projects .animation {
   position: absolute;
-  left: -20%;
 }
 
 .projects #Sysid {
