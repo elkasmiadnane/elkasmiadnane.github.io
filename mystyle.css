@@ -89,7 +89,7 @@ body {
 }
 
 .firstpage {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,9 +99,8 @@ body {
 
 .firstpage .animation {
   position: absolute;
-  margin-left: 10vw;
-  min-height: 100vh;
-  min-width: 100vh;
+  right: 0%;
+  width: 100%;
 }
 
 .firstpage_mytext {
