@@ -520,10 +520,6 @@ body {
   }
   .firstpage .animation {
     margin-top: 6%;
-    height: auto;
-    width: auto;
-    min-height: 0vh;
-    min-width: 0vh;
   }
   .projects img {
     margin-left: -5%;
