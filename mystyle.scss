@@ -34,33 +34,18 @@ body{
     border: 0.5px solid wheat;
 }
 .header{
-
-    
-    
     display: flex;
     align-items:center;
     position: fixed;
-    z-index: 2;
-    
-    
+    z-index: 2; 
     background-color: #1f2839;
-    
     height: 7vh;
-    
     width: 100%;
-    
     color: black;
     font-size:small;
 
-    
-    
     .myname{
-
-        
-        
-
         margin-left: 2vw;
-        
         
         img{
             height: 2rem;
@@ -68,14 +53,13 @@ body{
             
             
         }
-        
-
     }
+
     .name{
         position: absolute;
-        
         margin-left: 12%;
         color: white;
+        font-size: 1rem;
         
     }
     #contactme{
@@ -86,81 +70,41 @@ body{
         display: flex;
         align-items: flex-end;
         width: 9rem;
-
-        
-        
-        
         font-size: 1rem;
-       
         padding: 0.5%;
         right: 5vw;
-
         text-decoration: underline;
         cursor: pointer;
         
         img{
             height: 20px;
             width: 20px;
-            
-            
-        }
-        
+        }   
     }
-
-    
 }
 
 .firstpage{
-
-    
-    height: 110vh;
-    width: 100vw;
-
     display: flex;
-
-    position: relative;
-
+    height: fit-content;
+    width: 100%;
     
-
-
-    .animation{
-        position: absolute;
-        //justify-self: flex-start;
-        //margin-left: 10vw;
-        //margin-top: 3%;
-        right: 0%;
-        
-
-        width: 100%;
-
-        
-        
-    
-    }
-
     &_mytext{
-        
-        
-
-        position: absolute;
-
-        left: 10%;
-        
         display: flex;
-        justify-content: center;
-        align-self: center;
         flex-direction: column;
-
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        transform: translate(5%, 30%);
+        margin-top: 15%;
+        margin-left: 5%;
         font-size: 1.2vw;
 
-        top: 20%;
-        
-
-        align-items: center;
+        *{
+            margin: 0%;
+        }
 
         h1{
             font-weight:600;
-            
         }
 
         p{
@@ -173,20 +117,19 @@ body{
 
 
         &_image{
-            display: flex;
             
+            display: flex;
             height: 70px;
             width: 70px;
-            
-            
         }
 
     }
     
+    .animation{
+        height: 100%;
+        width: 100%;
+    }
 }
-
-
-
 
 .robotics{
 
@@ -622,21 +565,20 @@ body{
 
     .firstpage{
         &_mytext{
-            position: absolute;
-            margin-top: 20%;
-            margin-left: 7%;
-            justify-self: center;
-            font-size: 2.6vw;
-            bottom: 5%;
+            // position: absolute;
+            // margin-top: 20%;
+            // margin-left: 7%;
+            // justify-self: center;
+             font-size: 1.6vw;
+            // bottom: 5%;
+
+            img{
+                height: 40px;
+                width: 40px;
+            }
         }
         .animation{
-            margin-top: 6%;
-
-            // height: auto;
-            // width: auto;
-
-            // min-height: 0vh;
-            // min-width: 0vh;
+            margin-top: 6vh;
         }
     } 
     .projects{

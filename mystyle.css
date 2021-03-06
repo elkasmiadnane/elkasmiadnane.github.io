@@ -60,6 +60,7 @@ body {
   position: absolute;
   margin-left: 12%;
   color: white;
+  font-size: 1rem;
 }
 
 .header #contactme {
@@ -89,40 +90,39 @@ body {
 }
 
 .firstpage {
-  height: 110vh;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-}
-
-.firstpage .animation {
-  position: absolute;
-  right: 0%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
 }
 
 .firstpage_mytext {
-  position: absolute;
-  left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.2vw;
-  top: 20%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  -webkit-transform: translate(5%, 30%);
+          transform: translate(5%, 30%);
+  margin-top: 15%;
+  margin-left: 5%;
+  font-size: 1.2vw;
+}
+
+.firstpage_mytext * {
+  margin: 0%;
 }
 
 .firstpage_mytext h1 {
@@ -141,6 +141,11 @@ body {
   display: flex;
   height: 70px;
   width: 70px;
+}
+
+.firstpage .animation {
+  height: 100%;
+  width: 100%;
 }
 
 .robotics {
@@ -510,16 +515,14 @@ body {
 
 @media screen and (max-width: 1000px) {
   .firstpage_mytext {
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 7%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    font-size: 2.6vw;
-    bottom: 5%;
+    font-size: 1.6vw;
+  }
+  .firstpage_mytext img {
+    height: 40px;
+    width: 40px;
   }
   .firstpage .animation {
-    margin-top: 6%;
+    margin-top: 6vh;
   }
   .projects img {
     margin-left: -5%;
