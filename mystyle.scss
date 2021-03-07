@@ -7,6 +7,8 @@ html{
 body{
     margin: 0%;
     padding: 0%;
+
+    //width: 100%;
     
     box-sizing: border-box;
 
@@ -18,21 +20,6 @@ body{
     
 }
 
-.separator{
-    background-color: wheat;
-    display: flex;
-    position: absolute;
-    width: 60%;
-    height: 0.4px;
-    justify-self: center;
-    margin-left: 20%;
-    margin-bottom: 10%;
-    opacity: 0.1;
-    align-self: flex-end;
-    z-index: 3;
-
-    border: 0.5px solid wheat;
-}
 .header{
     display: flex;
     align-items:center;
@@ -40,7 +27,7 @@ body{
     z-index: 2; 
     background-color: #1f2839;
     height: 7vh;
-    width: 100%;
+    width: 100vw;
     color: black;
     font-size:small;
 
@@ -138,7 +125,7 @@ body{
 
     
     
-    height:60vh;
+    height:auto;
     width:100vw;
 
 
@@ -150,13 +137,8 @@ body{
 
     .animation{
         
+        transform: translate(-20%, 0%);
         
-        position: absolute;
-
-        margin-right: 50% ;
-        margin-left: -20% ;
-
-        align-self: flex-end;
 
     }
 
@@ -166,7 +148,7 @@ body{
         
         font-size: 1.5rem;
         font-weight: 100;
-        //font-style: italic;
+        
         color: #FFFFFF;
 
         right: 10%;
@@ -174,7 +156,7 @@ body{
         
         width: 40ch;
 
-        font-size: 1.5vw;
+        font-size: 1.7vw;
 
         text-indent: 2rem;
 
@@ -189,50 +171,22 @@ body{
     background-color: #1f2839;
     
     
-    height:60vh;
-    width:100vw;
-    
-    position: relative;
-
-    display: flex;
-    align-items: center;
+    height:fit-content;
 
     
-
-    .animation{
-        position: absolute;
-
-        margin-left: 30% ;
-        margin-right: 10% ;
-
-        align-self: flex-end;
-    }
+    
+    
+   
 
     h1{
+
+        position: absolute;
+        transform: translate(50%,200%);
         
         font-size: 3vw;
         font-weight: 500;
-    }
-
-
-    .text{
-        position: absolute;
-        
-        font-size: 1.5rem;
-        font-weight: 100;
-        
         color: #FFFFFF;
-
-        left: 10%;
-        top: 10%;
-       
-        
-        
-
-        text-indent: 2rem;
-
     }
-
 
     
 }
@@ -249,6 +203,8 @@ body{
     
     flex-direction: column;
     align-items: center;
+
+    
     
 
     .rules{
@@ -490,7 +446,7 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
     
-    //height: 100vh;
+    
     
     background-color: #1f2839;
 
@@ -532,7 +488,9 @@ body{
     }
 
     .animation{
-        position: absolute;
+        //position: absolute;
+
+        display: none;
         
         
         
@@ -636,8 +594,9 @@ body{
     .robotics{
         .es{
             
-            left: 18%;
-            font-size: 2.6vw;
+            // left: 18%;
+            font-size: 2vw;
+            width: 30ch;
             
         }
     }
