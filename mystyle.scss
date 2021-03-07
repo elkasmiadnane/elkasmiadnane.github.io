@@ -204,7 +204,7 @@ body{
 
     h1{
         align-self: center;
-        font-size: 1.2rem;
+        font-size: 1.3vw;
         font-weight: 500;
         color: white;
         
@@ -527,7 +527,7 @@ body{
             font-size: 0.5rem;
         }
 
-        contactme{
+        #contactme{
             font-size: 0.5rem;
         }
     }
@@ -546,7 +546,9 @@ body{
         }
     } 
     .projects{
-
+        h1{
+            font-size: 3vw;
+        }
         img{
             margin-left: -5%;
             margin-top: 1%;
