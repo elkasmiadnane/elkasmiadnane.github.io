@@ -193,7 +193,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   font-weight: 500;
   color: white;
 }
@@ -476,7 +476,7 @@ body {
   .header .name {
     font-size: 0.5rem;
   }
-  .header contactme {
+  .header #contactme {
     font-size: 0.5rem;
   }
   .firstpage_mytext img {
@@ -485,6 +485,9 @@ body {
   }
   .firstpage .animation {
     margin-top: 6vh;
+  }
+  .projects h1 {
+    font-size: 3vw;
   }
   .projects img {
     margin-left: -5%;
