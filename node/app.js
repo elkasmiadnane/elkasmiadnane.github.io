@@ -4,7 +4,7 @@ const app = express();
 
 const port = process.env.port || 3000;
 
-let name = document.getElementById('name');
+//let name = document.getElementById('name');
 
 //port = 
 
