@@ -191,6 +191,83 @@ body{
     
 }
 
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    
+    
+    background-color: #1f2839;
+
+    color: white;
+
+    h1{
+        align-self: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        
+    }
+    
+
+    img{
+        height: 30px;
+        
+        
+        transition: height .5s ease-in-out;
+        font-style: oblique;
+    }
+    .project{
+        
+        width: 30rem;
+        
+       
+        padding: 1.5rem;
+        border-radius: 15px;
+
+        clip-path: circle(7% at 8% 18%);
+        transition: clip-path .5s ease-in-out;
+        &:hover{
+            clip-path: circle(100%);
+            
+            img{
+                height: 60px;
+            }
+        }
+    }
+
+    .animation{
+        //position: absolute;
+
+        display: none;
+        
+        
+        
+    }
+
+    #Sysid{
+        background-color: #c06318 ;
+        margin-left: 35%;
+        
+    }
+
+    #androidproject{
+        background-color: #3DDC84 ;
+        margin-left: 50vw;
+        
+    }
+
+    #pythonproject{
+        background-color: #33b2e4 ;
+        margin-left: 35%;
+        
+    }
+
+    
+
+    
+}
 .draganddrop{
     
     background-color: #1f2839;
@@ -209,7 +286,7 @@ body{
 
     .rules{
         
-        margin-top:5vh;
+        margin-top:2vh;
         color: white;
         
     }
@@ -218,7 +295,7 @@ body{
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 50%;
+        top: 40%;
         background-image: url("pngs/bg.png");
         background-repeat: no-repeat;
         background-position: center;
@@ -441,94 +518,23 @@ body{
 }
 
 
-.projects{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    
-    
-    
-    background-color: #1f2839;
 
-    color: white;
-
-    h1{
-        align-self: center;
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: white;
-        
-    }
-    
-
-    img{
-        height: 30px;
-        
-        
-        transition: height .5s ease-in-out;
-        font-style: oblique;
-    }
-    .project{
-        
-        width: 30rem;
-        
-       
-        padding: 1.5rem;
-        border-radius: 15px;
-
-        clip-path: circle(7% at 8% 18%);
-        transition: clip-path .5s ease-in-out;
-        &:hover{
-            clip-path: circle(100%);
-            
-            img{
-                height: 60px;
-            }
-        }
-    }
-
-    .animation{
-        //position: absolute;
-
-        display: none;
-        
-        
-        
-    }
-
-    #Sysid{
-        background-color: #c06318 ;
-        margin-left: 35%;
-        
-    }
-
-    #androidproject{
-        background-color: #3DDC84 ;
-        margin-left: 60vw;
-        
-    }
-
-    #pythonproject{
-        background-color: #33b2e4 ;
-        margin-left: 35%;
-        
-    }
-
-    
-
-    
-}
 
 @media screen and (max-width : 1000px ){
 
+    .header{
+        .name{
+            font-size: 0.5rem;
+        }
+
+        contactme{
+            font-size: 0.5rem;
+        }
+    }
+
     .firstpage{
         &_mytext{
-            // position: absolute;
-            // margin-top: 20%;
-            // margin-left: 7%;
-            // justify-self: center;
-             font-size: 1.6vw;
-            // bottom: 5%;
+            
 
             img{
                 height: 40px;

@@ -174,6 +174,77 @@ body {
   color: #FFFFFF;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1f2839;
+  color: white;
+}
+
+.projects h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.projects img {
+  height: 30px;
+  -webkit-transition: height .5s ease-in-out;
+  transition: height .5s ease-in-out;
+  font-style: oblique;
+}
+
+.projects .project {
+  width: 30rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  -webkit-clip-path: circle(7% at 8% 18%);
+          clip-path: circle(7% at 8% 18%);
+  -webkit-transition: -webkit-clip-path .5s ease-in-out;
+  transition: -webkit-clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
+}
+
+.projects .project:hover {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.projects .project:hover img {
+  height: 60px;
+}
+
+.projects .animation {
+  display: none;
+}
+
+.projects #Sysid {
+  background-color: #c06318;
+  margin-left: 35%;
+}
+
+.projects #androidproject {
+  background-color: #3DDC84;
+  margin-left: 50vw;
+}
+
+.projects #pythonproject {
+  background-color: #33b2e4;
+  margin-left: 35%;
+}
+
 .draganddrop {
   background-color: #1f2839;
   position: relative;
@@ -192,7 +263,7 @@ body {
 }
 
 .draganddrop .rules {
-  margin-top: 5vh;
+  margin-top: 2vh;
   color: white;
 }
 
@@ -201,7 +272,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 40%;
   background-image: url("pngs/bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -401,80 +472,12 @@ body {
   color: white;
 }
 
-.projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #1f2839;
-  color: white;
-}
-
-.projects h1 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: white;
-}
-
-.projects img {
-  height: 30px;
-  -webkit-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out;
-  font-style: oblique;
-}
-
-.projects .project {
-  width: 30rem;
-  padding: 1.5rem;
-  border-radius: 15px;
-  -webkit-clip-path: circle(7% at 8% 18%);
-          clip-path: circle(7% at 8% 18%);
-  -webkit-transition: -webkit-clip-path .5s ease-in-out;
-  transition: -webkit-clip-path .5s ease-in-out;
-  transition: clip-path .5s ease-in-out;
-  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
-}
-
-.projects .project:hover {
-  -webkit-clip-path: circle(100%);
-          clip-path: circle(100%);
-}
-
-.projects .project:hover img {
-  height: 60px;
-}
-
-.projects .animation {
-  display: none;
-}
-
-.projects #Sysid {
-  background-color: #c06318;
-  margin-left: 35%;
-}
-
-.projects #androidproject {
-  background-color: #3DDC84;
-  margin-left: 60vw;
-}
-
-.projects #pythonproject {
-  background-color: #33b2e4;
-  margin-left: 35%;
-}
-
 @media screen and (max-width: 1000px) {
-  .firstpage_mytext {
-    font-size: 1.6vw;
+  .header .name {
+    font-size: 0.5rem;
+  }
+  .header contactme {
+    font-size: 0.5rem;
   }
   .firstpage_mytext img {
     height: 40px;
