@@ -1,0 +1,23 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "server of contact",
+  "main": "contactme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elkasmiadnane/elkasmiadnane.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elkasmiadnane/elkasmiadnane.github.io/issues"
+  },
+  "homepage": "https://github.com/elkasmiadnane/elkasmiadnane.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
