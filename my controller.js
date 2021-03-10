@@ -133,5 +133,7 @@ window.onscroll = function(){
 };
 
 document.getElementById('contactme').addEventListener('click', ()=>{
-    window.open('contactme.html');
+    window.open('http://localhost:3000/contactme');
+
+    
 })
