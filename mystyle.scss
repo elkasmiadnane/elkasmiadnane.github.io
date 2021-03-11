@@ -12,12 +12,29 @@ body{
     
     box-sizing: border-box;
 
-    background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
-    
-    
-    font-family: 'Raleway' , sans-serif;
+    //background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
 
+    background-color: #060d20;
     
+    
+    font-family: 'JetBrains Mono', monospace;
+
+    .grad-head{
+
+        font-family: 'Raleway' , sans-serif;
+
+        font-size: 1.4vw;
+    
+
+        color: transparent;
+        
+        background:-webkit-linear-gradient(
+            -70deg
+            ,#a2facf,#64acff);
+        -webkit-background-clip: text ;
+        -webkit-box-decoration-break: clone;
+
+    }
 }
 
 .header{
@@ -74,38 +91,48 @@ body{
     display: flex;
     height: fit-content;
     width: 100%;
+
+    h1{
+
+        position: absolute;
+        margin-top: 10%;
+        transform: translate(70%, 120%);
+        
+        border: 2px solid  #060d20 ;
+
+        color: transparent;
+        
+
+    }
     
     &_mytext{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+
+        background-color: #0d162b;
+        color: white;
+
+        border:0.1px solid rgba(253, 245, 230, 0.2);
+        border-radius: 15px;
+    
         position: absolute;
-        transform: translate(5%, 30%);
-        margin-top: 15%;
-        margin-left: 5%;
-        font-size: 1.2vw;
+        transform: translate(30%, 100%);
+        
+        font-size: 1vw;
+        padding: 20px;
+
+        font-weight:200;
+        
+        max-width: 40ch;
 
         *{
             margin: 0%;
         }
 
-        h1{
-            font-weight:600;
-        }
-
-        p{
-            font-weight:200;
-            
-            
-            text-indent: 2rem;
-            max-width: 40ch;
-        }
+    
 
 
         &_image{
             
-            display: flex;
+            display: none;
             height: 70px;
             width: 70px;
         }
@@ -115,13 +142,14 @@ body{
     .animation{
         height: 100%;
         width: 100%;
+        margin-left : 20vw;
     }
 }
 
 .robotics{
 
     
-    background-color: #1f2839;
+    background-color: #0d162b;
 
     
     
@@ -131,34 +159,48 @@ body{
 
     display: flex;
     
-    align-items: center;
-
+   
     
 
     .animation{
         
-        transform: translate(-20%, 0%);
         
+        margin-right: 40%;
+        margin-left: -10%;
 
+    }
+
+    h1{
+        position: absolute;
+
+        transform: translate(20%,100%);
+        left: 60%;
+
+        border: 2px solid #0d162b;
     }
 
     .es{
 
+    
+
+        border:0.1px solid rgba(253, 245, 230, 0.2);
+        border-radius: 15px;
+
+        background : #060d20 ;
+        color: white;
+    
         position: absolute;
-        
-        font-size: 1.5rem;
-        font-weight: 100;
-        
-        color: #FFFFFF;
+        transform: translate(0%, 20%);
 
-        right: 10%;
+        left: 60%;
+        margin-top: 4%;
         
+        font-size: 0.8vw;
+        padding: 20px;
+
+        font-weight:200;
         
-        width: 40ch;
-
-        font-size: 1.7vw;
-
-        text-indent: 2rem;
+        max-width: 50ch;
 
     }
     
@@ -168,24 +210,47 @@ body{
 .logos{
 
     
-    background-color: #1f2839;
+    background-color:#060d20;
     
     
     height:fit-content;
 
     
+    .text{
+        border:0.1px solid rgba(253, 245, 230, 0.2);
+        border-radius: 15px;
+
+        background : #0d162b;
+        color: white;
     
+        position: absolute;
+        transform: translate(0%, 50%);
+
+        left: 10%;
+        margin-top: 6%;
+        
+        font-size: 0.8vw;
+        padding: 20px;
+
+        font-weight:200;
+        
+        max-width: 40ch;
+    }
     
    
-
+    .animation{
+        margin-left: 30%;
+        margin-right: 20%;
+    }
     h1{
 
         position: absolute;
-        transform: translate(50%,200%);
-        
-        font-size: 3vw;
-        font-weight: 500;
-        color: #FFFFFF;
+        transform: translate(0%,0%);
+        left: 10%;
+        margin-top: 5%;
+        //font-size: 3vw;
+        //font-weight: 500;
+        //color: #FFFFFF;
     }
 
     
@@ -221,13 +286,13 @@ body{
     .project{
         
         width: 30rem;
-        
+        margin-bottom: 10px;
        
         padding: 1.5rem;
         border-radius: 15px;
 
         clip-path: circle(7% at 8% 18%);
-        transition: clip-path .5s ease-in-out;
+        transition: clip-path 1s ease-in-out;
         &:hover{
             clip-path: circle(100%);
             
@@ -593,9 +658,9 @@ body{
 
     .logos{
         .animation{
-            margin-left: 0%;
-            margin-right: 0%;
-            bottom: 20%;
+            //margin-left: 10%;
+            //margin-right: 10%;
+            //bottom: 20%;
         }
     }
 
@@ -603,8 +668,8 @@ body{
         .es{
             
             // left: 18%;
-            font-size: 2vw;
-            width: 30ch;
+            // font-size: 2vw;
+            // width: 30ch;
             
         }
     }

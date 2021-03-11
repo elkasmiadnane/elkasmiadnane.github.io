@@ -30,7 +30,7 @@ contactme.onsubmit = async(event)=>{
 
     console.log('form is ' , form);
 
-    if ( namee.value != null  ){
+    if ( namee.value != '' &&  email.value != '', message.value != '' ){
             const formdata = {
                 name : namee.value,
                 email : email.value,
@@ -40,12 +40,8 @@ contactme.onsubmit = async(event)=>{
 
             }
 
-            // console.log('form data ' , formdata);
-            // console.log('headers are ' , headers)
-
-
-
-            let responsePromise = await fetch (  form.action , {
+    
+            let responsePromise = await fetch ( form.action , {
                 method : 'POST',
                 headers,
                 body : JSON.stringify(formdata)
@@ -55,7 +51,13 @@ contactme.onsubmit = async(event)=>{
             }).then(function(jsonData){
                 console.log('done');
                 //console.log('its' , response);
-                alert('object is ' , jsonData.formdata);
+                alert('object is ' , jsonData);
+
+                namee.value = '';
+                email.value = '';
+                object.value = '';
+                message.value = '';
+                
             
             }).catch(error=>{
                 alert(error);

@@ -13,13 +13,9 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 
-data = [
-    {n:12}, {n:12}, 
-];
-
 app.get('/contactme' , (req,res)=>{
     res.sendFile(__dirname + '/public/contactme.html');
-    
+
 })
 
 app.post('/contactme' , (req,res)=>{
@@ -27,7 +23,7 @@ app.post('/contactme' , (req,res)=>{
 
     res.send(req.body);
 
-    console.log("body is : " , req.body.name);
+    console.log("body is : " , req.body);
 
 
 });

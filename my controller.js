@@ -130,10 +130,20 @@ window.onscroll = function(){
     else{
         document.getElementById('myname').style.opacity = '0';
     }
+
+    if(document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300){
+        document.getElementById('Sysid').style.clipPath = 'circle(100%)';
+    }
+    if(document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500){
+        document.getElementById('androidproject').style.clipPath = 'circle(100%)';
+    }
+    if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
+        document.getElementById('pythonproject').style.clipPath = 'circle(100%)';
+    }
 };
 
 document.getElementById('contactme').addEventListener('click', ()=>{
-    window.open('http://localhost:3000/contactme');
+    window.open('public/contactme.html');
 
     
 })
