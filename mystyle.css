@@ -102,18 +102,21 @@ body .grad-head {
   background-color: #0d162b;
   color: white;
   border: 0.1px solid rgba(253, 245, 230, 0.2);
-  border-radius: 15px;
+  border-radius: 5px;
   position: absolute;
   -webkit-transform: translate(30%, 100%);
           transform: translate(30%, 100%);
-  font-size: 1vw;
-  padding: 20px;
+  margin-top: 5%;
+  font-size: 0.8vw;
+  padding: 10px;
+  padding-left: 15px;
+  line-height: 2.2;
   font-weight: 200;
-  max-width: 40ch;
+  max-width: 50ch;
 }
 
-.firstpage_mytext * {
-  margin: 0%;
+.firstpage_mytext span {
+  color: #50ac79;
 }
 
 .firstpage_mytext_image {
@@ -152,18 +155,27 @@ body .grad-head {
 
 .robotics .es {
   border: 0.1px solid rgba(253, 245, 230, 0.2);
-  border-radius: 15px;
+  border-radius: 5px;
   background: #060d20;
   color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   -webkit-transform: translate(0%, 20%);
           transform: translate(0%, 20%);
   left: 60%;
   margin-top: 4%;
   font-size: 0.8vw;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 15px;
+  line-height: 2.2;
   font-weight: 200;
   max-width: 50ch;
+}
+
+.robotics .es span {
+  color: #50ac79;
 }
 
 .logos {
@@ -175,7 +187,7 @@ body .grad-head {
 
 .logos .text {
   border: 0.1px solid rgba(253, 245, 230, 0.2);
-  border-radius: 15px;
+  border-radius: 5px;
   background: #0d162b;
   color: white;
   position: absolute;
@@ -184,9 +196,15 @@ body .grad-head {
   left: 10%;
   margin-top: 6%;
   font-size: 0.8vw;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 15px;
+  line-height: 2.2;
   font-weight: 200;
-  max-width: 40ch;
+  max-width: 50ch;
+}
+
+.logos .text span {
+  color: #50ac79;
 }
 
 .logos .animation {
@@ -213,7 +231,7 @@ body .grad-head {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #1f2839;
+  background-color: #0D162B;
   color: white;
 }
 

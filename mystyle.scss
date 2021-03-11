@@ -111,21 +111,32 @@ body{
         color: white;
 
         border:0.1px solid rgba(253, 245, 230, 0.2);
-        border-radius: 15px;
+        border-radius: 5px;
     
         position: absolute;
         transform: translate(30%, 100%);
         
-        font-size: 1vw;
-        padding: 20px;
+        
+
+        margin-top: 5%;
+        
+        
+        font-size: 0.8vw;
+        padding: 10px;
+        padding-left: 15px;
+        
+        line-height: 2.2;
 
         font-weight:200;
         
-        max-width: 40ch;
+        max-width: 50ch;
 
-        *{
-            margin: 0%;
+        
+
+        span{
+            color : #50ac79;
         }
+
 
     
 
@@ -181,13 +192,17 @@ body{
 
     .es{
 
-    
+        span{
+            color : #50ac79;
+        }
 
         border:0.1px solid rgba(253, 245, 230, 0.2);
-        border-radius: 15px;
+        border-radius: 5px;
 
         background : #060d20 ;
         color: white;
+
+        justify-content: center;
     
         position: absolute;
         transform: translate(0%, 20%);
@@ -196,7 +211,10 @@ body{
         margin-top: 4%;
         
         font-size: 0.8vw;
-        padding: 20px;
+        padding: 10px;
+        padding-left: 15px;
+        
+        line-height: 2.2;
 
         font-weight:200;
         
@@ -218,10 +236,14 @@ body{
     
     .text{
         border:0.1px solid rgba(253, 245, 230, 0.2);
-        border-radius: 15px;
+        border-radius: 5px;
 
         background : #0d162b;
         color: white;
+
+        span{
+            color : #50ac79;
+        }
     
         position: absolute;
         transform: translate(0%, 50%);
@@ -230,11 +252,14 @@ body{
         margin-top: 6%;
         
         font-size: 0.8vw;
-        padding: 20px;
+        padding: 10px;
+        padding-left: 15px;
+        
+        line-height: 2.2;
 
         font-weight:200;
         
-        max-width: 40ch;
+        max-width: 50ch;
     }
     
    
@@ -263,7 +288,7 @@ body{
     
     
     
-    background-color: #1f2839;
+    background-color: #0D162B;
 
     color: white;
 
