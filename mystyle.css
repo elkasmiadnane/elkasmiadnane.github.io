@@ -104,8 +104,11 @@ body .grad-head {
   border: 0.1px solid rgba(253, 245, 230, 0.2);
   border-radius: 5px;
   position: absolute;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  -webkit-transform: translate(-20%, 0%);
+          transform: translate(-20%, 0%);
+  opacity: 0;
+  -webkit-transition: .7s transform ease-in-out , .7s opacity ease-in-out;
+  transition: .7s transform ease-in-out , .7s opacity ease-in-out;
   margin-top: 20%;
   left: 5%;
   font-size: 1rem;
@@ -163,6 +166,11 @@ body .grad-head {
 }
 
 .robotics .es {
+  -webkit-transform: translate(30%, 0%);
+          transform: translate(30%, 0%);
+  -webkit-transition: .7s transform ease-in-out , .5s opacity ease-in-out;
+  transition: .7s transform ease-in-out , .5s opacity ease-in-out;
+  opacity: 0;
   border: 0.1px solid rgba(253, 245, 230, 0.2);
   border-radius: 5px;
   background: #060d20;
@@ -530,11 +538,11 @@ body .grad-head {
     font-size: 0.5rem;
   }
   .firstpage h1 {
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 1rem;
   }
   .firstpage_mytext {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     max-width: 80ch;
     margin-top: 60%;
   }
@@ -544,7 +552,7 @@ body .grad-head {
   }
   .firstpage .animation {
     margin-top: 6vh;
-    margin-bottom: 30vh;
+    margin-bottom: 40vh;
   }
   .projects h1 {
     font-size: 3vw;

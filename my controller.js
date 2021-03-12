@@ -119,9 +119,26 @@ gameimage.addEventListener('click' , ()=>{
 
 window.onload = ()=>{
     document.getElementById('myname').style.opacity = '0';
+
+    setTimeout( document.getElementById('firstpagemytext').style.transform = 'translate(0%,0%)',
+    document.getElementById('firstpagemytext').style.opacity = '1', 3000);
+
+    
 }
 
-window.onscroll = function(){
+// function isembedInViewPort(function(document.getElementById('embeddedsystemstext')){
+
+// }
+
+window.onscroll= function(){
+
+    if (document.getElementById('embeddedsystemstext').getBoundingClientRect().y < 600){
+        document.getElementById('embeddedsystemstext').style.transform = 'translate(10%,0%)' ;
+        document.getElementById('embeddedsystemstext').style.opacity = '1' ;
+        
+    }
+
+    console.log(document.getElementById('embeddedsystemstext').getBoundingClientRect());
     
 
     if(document.body.scrollTop > 430 || document.documentElement.scrollTop > 300){

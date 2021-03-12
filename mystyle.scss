@@ -116,7 +116,10 @@ body{
         border-radius: 5px;
     
         position: absolute;
-        transform: translate(0%, 0%);
+        transform: translate(-20%, 0%);
+        opacity: 0;
+
+        transition: .7s transform ease-in-out , .7s opacity ease-in-out;
         
         margin-top: 20%;
         left: 5%;
@@ -194,6 +197,12 @@ body{
     }
 
     .es{
+
+        transform : translate(30%,0%);
+        transition: .7s transform ease-in-out , .5s opacity ease-in-out;
+
+        opacity: 0;
+        //transition: .5s opacity ease-in-out;
 
         span{
             color : #50ac79;
@@ -623,13 +632,13 @@ body{
     .firstpage{
 
         h1{
-            margin-top: 20%;
+            margin-top: 30%;
             font-size: 1rem;
             
         }
         &_mytext{
             
-            font-size: 0.5rem;
+            font-size: 0.7rem;
             max-width: 80ch;
             margin-top: 60%;
 
@@ -640,7 +649,7 @@ body{
         }
         .animation{
             margin-top: 6vh;
-            margin-bottom: 30vh;
+            margin-bottom: 40vh;
         }
     } 
     .projects{
