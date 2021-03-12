@@ -107,10 +107,13 @@ body .grad-head {
   -webkit-transform: translate(-20%, 0%);
           transform: translate(-20%, 0%);
   opacity: 0;
-  -webkit-transition: .7s transform ease-in-out , .7s opacity ease-in-out;
-  transition: .7s transform ease-in-out , .7s opacity ease-in-out;
+  -webkit-transition: .7s opacity ease-in-out , 0.7s -webkit-transform ease-in-out;
+  transition: .7s opacity ease-in-out , 0.7s -webkit-transform ease-in-out;
+  transition: 0.7s transform ease-in-out , .7s opacity ease-in-out;
+  transition: 0.7s transform ease-in-out , .7s opacity ease-in-out , 0.7s -webkit-transform ease-in-out;
   margin-top: 20%;
   left: 5%;
+  right: 5%;
   font-size: 1rem;
   padding: 10px;
   padding-left: 15px;
@@ -576,6 +579,14 @@ body .grad-head {
   .projects #pythonproject img {
     margin-left: -5%;
     margin-top: 5%;
+  }
+  .robotics h1 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .robotics .es {
+    margin-left: 10%;
+    margin-right: 20%;
   }
   .robotics .animation {
     margin-left: 10%;

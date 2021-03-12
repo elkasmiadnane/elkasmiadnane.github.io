@@ -98,7 +98,7 @@ body{
         position: absolute;
         margin-top: 15%;
         margin-left: 10%;
-        //transform: translate(70%, 120%);
+        
         
         border: 2px solid  #060d20 ;
 
@@ -119,10 +119,11 @@ body{
         transform: translate(-20%, 0%);
         opacity: 0;
 
-        transition: .7s transform ease-in-out , .7s opacity ease-in-out;
+        transition: 0.7s transform ease-in-out , .7s opacity ease-in-out;
         
         margin-top: 20%;
         left: 5%;
+        right: 5%;
         //top: 20vh;
         
         
@@ -724,6 +725,14 @@ body{
         //     // width: 30ch;
             
         // }
+        h1{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .es{
+            margin-left: 10%;
+            margin-right: 20%;
+        }
         .animation{
             
             margin-left: 10%;
