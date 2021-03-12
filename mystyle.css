@@ -15,7 +15,7 @@ body {
 
 body .grad-head {
   font-family: 'Raleway' , sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.3rem;
   color: transparent;
   background: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
   -webkit-background-clip: text;
@@ -91,23 +91,24 @@ body .grad-head {
 
 .firstpage h1 {
   position: absolute;
-  margin-top: 10%;
-  -webkit-transform: translate(70%, 120%);
-          transform: translate(70%, 120%);
+  margin-top: 15%;
+  margin-left: 10%;
   border: 2px solid  #060d20;
   color: transparent;
 }
 
 .firstpage_mytext {
+  position: absolute;
   background-color: #0d162b;
   color: white;
   border: 0.1px solid rgba(253, 245, 230, 0.2);
   border-radius: 5px;
   position: absolute;
-  -webkit-transform: translate(30%, 100%);
-          transform: translate(30%, 100%);
-  margin-top: 5%;
-  font-size: 0.8vw;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  margin-top: 20%;
+  left: 5%;
+  font-size: 1rem;
   padding: 10px;
   padding-left: 15px;
   line-height: 2.2;
@@ -129,27 +130,35 @@ body .grad-head {
   height: 100%;
   width: 100%;
   margin-left: 20vw;
+  margin-top: 5vh;
 }
 
 .robotics {
   background-color: #0d162b;
-  height: auto;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .robotics .animation {
   margin-right: 40%;
-  margin-left: -10%;
+  margin-top: 5%;
 }
 
 .robotics h1 {
-  position: absolute;
-  -webkit-transform: translate(20%, 100%);
-          transform: translate(20%, 100%);
-  left: 60%;
+  margin-top: 5%;
+  margin-left: 30vw;
   border: 2px solid #0d162b;
 }
 
@@ -158,15 +167,9 @@ body .grad-head {
   border-radius: 5px;
   background: #060d20;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  -webkit-transform: translate(0%, 20%);
-          transform: translate(0%, 20%);
-  left: 60%;
-  margin-top: 4%;
-  font-size: 0.8vw;
+  margin-left: 30vw;
+  margin-right: 5%;
+  font-size: 1rem;
   padding: 10px;
   padding-left: 15px;
   line-height: 2.2;
@@ -195,7 +198,7 @@ body .grad-head {
           transform: translate(0%, 50%);
   left: 10%;
   margin-top: 6%;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   padding: 10px;
   padding-left: 15px;
   line-height: 2.2;
@@ -526,12 +529,22 @@ body .grad-head {
   .header #contactme {
     font-size: 0.5rem;
   }
+  .firstpage h1 {
+    margin-top: 20%;
+    font-size: 1rem;
+  }
+  .firstpage_mytext {
+    font-size: 0.5rem;
+    max-width: 80ch;
+    margin-top: 60%;
+  }
   .firstpage_mytext img {
     height: 40px;
     width: 40px;
   }
   .firstpage .animation {
     margin-top: 6vh;
+    margin-bottom: 30vh;
   }
   .projects h1 {
     font-size: 3vw;
@@ -555,6 +568,10 @@ body .grad-head {
   .projects #pythonproject img {
     margin-left: -5%;
     margin-top: 5%;
+  }
+  .robotics .animation {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 /*# sourceMappingURL=mystyle.css.map */

@@ -23,7 +23,7 @@ body{
 
         font-family: 'Raleway' , sans-serif;
 
-        font-size: 1.4vw;
+        font-size: 1.3rem;
     
 
         color: transparent;
@@ -89,14 +89,16 @@ body{
 
 .firstpage{
     display: flex;
+    //flex-direction: column;
     height: fit-content;
     width: 100%;
 
     h1{
 
         position: absolute;
-        margin-top: 10%;
-        transform: translate(70%, 120%);
+        margin-top: 15%;
+        margin-left: 10%;
+        //transform: translate(70%, 120%);
         
         border: 2px solid  #060d20 ;
 
@@ -106,7 +108,7 @@ body{
     }
     
     &_mytext{
-
+        position: absolute;
         background-color: #0d162b;
         color: white;
 
@@ -114,14 +116,14 @@ body{
         border-radius: 5px;
     
         position: absolute;
-        transform: translate(30%, 100%);
+        transform: translate(0%, 0%);
+        
+        margin-top: 20%;
+        left: 5%;
+        //top: 20vh;
         
         
-
-        margin-top: 5%;
-        
-        
-        font-size: 0.8vw;
+        font-size: 1rem;
         padding: 10px;
         padding-left: 15px;
         
@@ -154,6 +156,7 @@ body{
         height: 100%;
         width: 100%;
         margin-left : 20vw;
+        margin-top: 5vh;
     }
 }
 
@@ -164,29 +167,29 @@ body{
 
     
     
-    height:auto;
+    //height:70vh;
     width:100vw;
 
 
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
    
     
 
     .animation{
         
-        
         margin-right: 40%;
-        margin-left: -10%;
+        margin-top: 5%;
+        
 
     }
 
     h1{
-        position: absolute;
-
-        transform: translate(20%,100%);
-        left: 60%;
-
+        
+        margin-top: 5%;
+        margin-left: 30vw;
         border: 2px solid #0d162b;
     }
 
@@ -202,15 +205,10 @@ body{
         background : #060d20 ;
         color: white;
 
-        justify-content: center;
-    
-        position: absolute;
-        transform: translate(0%, 20%);
-
-        left: 60%;
-        margin-top: 4%;
+        margin-left: 30vw;
+        margin-right: 5%;
         
-        font-size: 0.8vw;
+        font-size: 1rem;
         padding: 10px;
         padding-left: 15px;
         
@@ -251,7 +249,7 @@ body{
         left: 10%;
         margin-top: 6%;
         
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         padding: 10px;
         padding-left: 15px;
         
@@ -623,8 +621,17 @@ body{
     }
 
     .firstpage{
+
+        h1{
+            margin-top: 20%;
+            font-size: 1rem;
+            
+        }
         &_mytext{
             
+            font-size: 0.5rem;
+            max-width: 80ch;
+            margin-top: 60%;
 
             img{
                 height: 40px;
@@ -633,6 +640,7 @@ body{
         }
         .animation{
             margin-top: 6vh;
+            margin-bottom: 30vh;
         }
     } 
     .projects{
@@ -690,12 +698,27 @@ body{
     }
 
     .robotics{
-        .es{
+        // position: relative;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // h1{
+        //     position: relative;
+        //     left: 30vw;
+        // }
+        // .es{
+        //     transform: translate(0%,0%);
+        //     left: 0%;
+        //     position: relative;
+        //     //left: 30vw;
+        //     font-size: 2vw;
+        //     // width: 30ch;
             
-            // left: 18%;
-            // font-size: 2vw;
-            // width: 30ch;
+        // }
+        .animation{
             
+            margin-left: 10%;
+            margin-right: 10%;
         }
     }
     
