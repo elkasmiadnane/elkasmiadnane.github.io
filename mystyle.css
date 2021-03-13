@@ -555,7 +555,6 @@ body .grad-head {
 @media screen and (max-width: 1000px) {
   .header .items {
     font-size: 1.2vw;
-    border: 1px solid red;
   }
   .firstpage h1 {
     margin-top: 30%;

@@ -107,7 +107,7 @@ body{
         justify-content: space-between;
         display: flex;
         align-items: center;
-        //max-width: 20ch;
+        
 
         margin-right: 5%;
         
@@ -416,10 +416,9 @@ body{
     }
     
     .image{
-        //position: absolute;
+        
         transform: translate(0%, 0%);
-        //left: 50%;
-        //top: 60%;
+        
         background-image: url("pngs/bg.png");
         background-repeat: no-repeat;
         background-position: center;
@@ -652,7 +651,7 @@ body{
     .header{
         .items{
             font-size: 1.2vw;
-            border: 1px solid red;
+            
             
         }
 
