@@ -11,8 +11,11 @@ body{
 
     font-family: 'Raleway' , sans-serif;
 
-    
+    display: flex;
 
+   
+
+    justify-content: center;
     
 
     
@@ -23,19 +26,18 @@ body{
 
     justify-content: center;
     align-items: center;
+    
 
-    position: relative;
-
-    left: 10vw;
-    right: 10vw;
     
     background-color: #1f2839;
-    width: 500px;
+    width: 60vw;
     height: 100vh;
+
+    
 }
 
-*{
-    width: 350px;
+*:not(#container){
+    width: 80%;
     color: cornsilk;
 
     

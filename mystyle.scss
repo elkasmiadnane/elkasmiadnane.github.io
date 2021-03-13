@@ -1,14 +1,14 @@
 html{
     font-size: 100%;
     box-sizing: border-box;
-
+    
 }
 
 body{
     margin: 0%;
     padding: 0%;
-
-    //width: 100%;
+    
+    width: 100%;
     
     box-sizing: border-box;
 
@@ -38,14 +38,17 @@ body{
 }
 
 .header{
+    
     display: flex;
     align-items:center;
-    justify-content:center;
+    position: relative;
+    //justify-content:space-between;
     position: fixed;
     z-index: 2; 
     background-color:  #0d162b;
     height: 7vh;
-    width: 100vw;
+    width: 100%;
+    //border:1px solid hotpink;
 
    
 
@@ -55,51 +58,71 @@ body{
         
         
     }
-    
+    .items-container{
+
+        display: flex;
+        align-items:center;
+        justify-content:space-evenly;
+        
+        flex-direction: row;
+        flex: 1;
+
+    }
 
     .items{
+
+        
         
         color: white;
         font-size: 0.7rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
         margin-left: 3%;
-        margin-right: 1%;
+        
+        //border: 1px solid red ;
+
         
         
-        //border: 1px solid red;
+        
         
     }
 
-    .items:not(#mylogo):not(#my-name){
-        flex: 1;
+    .items:not(#mylogo):not(#contactme):not(#my-name){
+        
+
+        border-bottom: 2px solid whitesmoke;
+
+        border-bottom-style:hidden;
+        
+        
+        
+        
     }
 
     #my-name{
-        flex: 2;
+        flex: .4;
         border-right:.2px solid #fdf6e733;
-    }
-    #mylogo{
-        flex: .5;
         
     }
+    
     #contactme{
         
         //position: absolute;
         z-index: 3;
-        justify-content: space-evenly;
+        justify-content: space-between;
         display: flex;
-        align-items: flex-end;
-        width: 9rem;
+        align-items: center;
+        
 
-        padding: 0.5%;
-        right: 5vw;
+        padding: 2.5%;
+        
         text-decoration: underline;
         cursor: pointer;
 
         img{
             height: 15px;
             width: 15px;
+            padding-right: 5px;
         }   
     }
 }
@@ -156,7 +179,7 @@ body{
 
         &_image{
             
-            display: none;
+            //display: none;
             height: 70px;
             width: 70px;
         }
@@ -168,6 +191,7 @@ body{
         width: 100%;
         margin-left : 20vw;
         margin-top: 5vh;
+        //display: none;
     }
 }
 
@@ -245,8 +269,8 @@ body{
     
     background-color:#060d20;
     
-    
-    height:fit-content;
+    display: flex;
+    width:100%;
 
     
     .text{
@@ -261,13 +285,13 @@ body{
         }
     
         position: absolute;
-        transform: translate(-20%,20%);
+        transform: translate(-20%,0%);
         opacity: 0;
 
         transition: .7s opacity ease-in-out , .7s transform ease-in-out ;
 
         left: 10%;
-        margin-top: 6%;
+        margin-top: 10%;
         
         font-size: 1rem;
         padding: 10px;
@@ -633,18 +657,18 @@ body{
         .items{
             font-size: 0.1rem;
         }
+
     }
 
 
-    .items:not(#mylogo):not(#my-name){
-        flex: 0;
-    }
+    
 
     .firstpage{
 
         h1{
             margin-top: 30%;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
+            margin-left: 5%;
             
         }
         &_mytext{
@@ -660,7 +684,7 @@ body{
         }
         .animation{
             margin-top: 6vh;
-            margin-bottom: 30vh;
+            margin-bottom: 40vh;
         }
     } 
     .projects{
@@ -681,7 +705,9 @@ body{
 
             
             
-            margin-left: 5%;
+            align-self: center;
+            left: 0%;
+            right: 0%;
             
             width: 30ch;
             
@@ -706,10 +732,11 @@ body{
                 margin-top: 5%;
             }
             
-            margin-left: 5%;
+            align-self: center;
+            left: 0%;
+            right: 0%;
+            
             width: 30ch;
-            
-            
         }
 
     }
@@ -717,6 +744,7 @@ body{
     .logos{
 
         position: relative;
+        flex-direction: column;
         align-items: center;
         .animation{
             position: relative;
@@ -726,15 +754,15 @@ body{
 
         h1{
             position: relative;
-            left: 20%;
-            right: 20%;
+            left: 0%;
+            right: 0%;
             
-            transform: translate(0%,0%);
+            //transform: translate(0%,0%);
             padding-bottom: 2%;
         }
         .text{
-            left: 20%;
-            right: 20%;
+            left: 0%;
+            right: 0%;
             position: relative;
             margin-top: 0%;
             

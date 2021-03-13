@@ -30,6 +30,9 @@ let holdersl = [document.getElementById('left1'),document.getElementById('left2'
 let holdersr = [document.getElementById('right1'),document.getElementById('right2'),
                 document.getElementById('right3'),document.getElementById('right4')];
 
+let items = [document.getElementById('mainpage'),document.getElementById('main1')
+            ,document.getElementById('main2'),document.getElementById('main3')];
+
 
 
 
@@ -175,6 +178,8 @@ chargetext = async function ( ){
 window.onload = ()=>{
     //document.getElementById('mylogo').style.opacity = '0';
 
+    document.getElementById('mainpage').style.borderBottomStyle = "groove";
+
     setTimeout(function(){
         document.getElementById('firstpagemytext').style.transform = 'translate(0%,0%)';
         document.getElementById('firstpagemytext').style.opacity = '1';
@@ -195,16 +200,68 @@ window.onload = ()=>{
 
 window.onscroll = function(){
 
-    
+    console.log(scrollY)
+
+    if ( scrollY < 700){
+        items.forEach(element => {
+            element.style.borderBottomStyle = 'hidden';
+        });
+
+        items[0].style.borderBottomStyle = 'groove';
+    }else{
+        items[0].style.borderBottomStyle = 'hidden';
+    }
+
+    if (700 < scrollY && scrollY < 1500){
+        items.forEach(element => {
+            element.style.borderBottomStyle = 'hidden';
+        });
+
+        items[1].style.borderBottomStyle = 'groove';
+        items[1].innerHTML = " Embedded Systems"
+
+    }else{
+        items[1].style.borderBottomStyle = 'hidden';
+        items[1].innerHTML = " E S"
+    }
+
+    if (1500 < scrollY && scrollY < 2250){
+        items.forEach(element => {
+            element.style.borderBottomStyle = 'hidden';
+        });
+
+        items[2].style.borderBottomStyle = 'groove';
+        items[2].innerHTML = " Coding Languages"
+    }else{
+        items[2].innerHTML = " C L"
+    }
+
+    if (2250 < scrollY ){
+        items.forEach(element => {
+            element.style.borderBottomStyle = 'hidden';
+        });
+
+        items[3].style.borderBottomStyle = 'groove';
+        items[3].innerHTML = " Recent Projects"
+    }else{
+        items[3].innerHTML = " R P "
+    }
+
+
+    // ——————————————————————————————————————————————————————————
+
+
 
     if (document.getElementById('embeddedsystemstext').getBoundingClientRect().y < 500){
         document.getElementById('embeddedsystemstext').style.transform = 'translate(10%,0%)' ;
         document.getElementById('embeddedsystemstext').style.opacity = '1' ;
+
+        
         
     }
 
     if (document.getElementById('logostext').getBoundingClientRect().y < 500){
-        document.getElementById('logostext').style.transform = 'translate(0%,20%)' ;
+        document.getElementById('logostext').style.transform = 'translate(0%,0%)' ;
         document.getElementById('logostext').style.opacity = '1' ;
         
     }

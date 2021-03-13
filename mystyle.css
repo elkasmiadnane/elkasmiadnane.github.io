@@ -7,6 +7,7 @@ html {
 body {
   margin: 0%;
   padding: 0%;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #060d20;
@@ -29,18 +30,35 @@ body .grad-head {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
   position: fixed;
   z-index: 2;
   background-color: #0d162b;
   height: 7vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .header img {
   height: 2rem;
+}
+
+.header .items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .header .items {
@@ -49,42 +67,32 @@ body .grad-head {
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin-left: 3%;
-  margin-right: 1%;
 }
 
-.header .items:not(#mylogo):not(#my-name) {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.header .items:not(#mylogo):not(#contactme):not(#my-name) {
+  border-bottom: 2px solid whitesmoke;
+  border-bottom-style: hidden;
 }
 
 .header #my-name {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: .4;
+      -ms-flex: .4;
+          flex: .4;
   border-right: .2px solid #fdf6e733;
-}
-
-.header #mylogo {
-  -webkit-box-flex: .5;
-      -ms-flex: .5;
-          flex: .5;
 }
 
 .header #contactme {
   z-index: 3;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 9rem;
-  padding: 0.5%;
-  right: 5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5%;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -92,6 +100,7 @@ body .grad-head {
 .header #contactme img {
   height: 15px;
   width: 15px;
+  padding-right: 5px;
 }
 
 .firstpage {
@@ -137,7 +146,6 @@ body .grad-head {
 }
 
 .firstpage_mytext_image {
-  display: none;
   height: 70px;
   width: 70px;
 }
@@ -204,9 +212,10 @@ body .grad-head {
 
 .logos {
   background-color: #060d20;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .logos .text {
@@ -215,13 +224,13 @@ body .grad-head {
   background: #0d162b;
   color: white;
   position: absolute;
-  -webkit-transform: translate(-20%, 20%);
-          transform: translate(-20%, 20%);
+  -webkit-transform: translate(-20%, 0%);
+          transform: translate(-20%, 0%);
   opacity: 0;
   -webkit-transition: .7s opacity ease-in-out , .7s transform ease-in-out;
   transition: .7s opacity ease-in-out , .7s transform ease-in-out;
   left: 10%;
-  margin-top: 6%;
+  margin-top: 10%;
   font-size: 1rem;
   padding: 10px;
   padding-left: 15px;
@@ -547,14 +556,10 @@ body .grad-head {
   .header .items {
     font-size: 0.1rem;
   }
-  .items:not(#mylogo):not(#my-name) {
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
-  }
   .firstpage h1 {
     margin-top: 30%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-left: 5%;
   }
   .firstpage_mytext {
     font-size: 0.7rem;
@@ -567,7 +572,7 @@ body .grad-head {
   }
   .firstpage .animation {
     margin-top: 6vh;
-    margin-bottom: 30vh;
+    margin-bottom: 40vh;
   }
   .projects .project {
     -webkit-clip-path: circle(7% at 8.3% 53px);
@@ -581,7 +586,11 @@ body .grad-head {
     margin-top: 5%;
   }
   .projects #Sysid {
-    margin-left: 5%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    left: 0%;
+    right: 0%;
     width: 30ch;
   }
   .projects #androidproject {
@@ -589,7 +598,11 @@ body .grad-head {
     width: 30ch;
   }
   .projects #pythonproject {
-    margin-left: 5%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    left: 0%;
+    right: 0%;
     width: 30ch;
   }
   .projects #pythonproject img {
@@ -598,6 +611,10 @@ body .grad-head {
   }
   .logos {
     position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -607,15 +624,13 @@ body .grad-head {
   }
   .logos h1 {
     position: relative;
-    left: 20%;
-    right: 20%;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    left: 0%;
+    right: 0%;
     padding-bottom: 2%;
   }
   .logos .text {
-    left: 20%;
-    right: 20%;
+    left: 0%;
+    right: 0%;
     position: relative;
     margin-top: 0%;
     font-size: 0.7rem;
