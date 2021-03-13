@@ -199,19 +199,23 @@ window.onload = ()=>{
 
 window.onscroll = function(){
 
+    //onsole.log(document.getElementById('firstpage').getBoundingClientRect().top);
+    console.log(document.getElementById('robotics').getBoundingClientRect().y);
     
 
-    if ( scrollY < 700){
+    if ( -550 < document.getElementById('firstpage').getBoundingClientRect().y
+    && document.getElementById('firstpage').getBoundingClientRect().y < 275){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });
 
         items[0].style.borderBottomStyle = 'groove';
     }else{
-        items[0].style.borderBottomStyle = 'hidden';
+        //items[0].style.borderBottomStyle = 'hidden';
     }
 
-    if (700.1 < scrollY && scrollY < 1500){
+    if (-550 < document.getElementById('robotics').getBoundingClientRect().y
+     && document.getElementById('robotics').getBoundingClientRect().y < 275){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });
@@ -220,11 +224,12 @@ window.onscroll = function(){
         items[1].innerHTML = " Embedded Systems"
 
     }else{
-        items[1].style.borderBottomStyle = 'hidden';
-        items[1].innerHTML = " E S"
+        
+        //items[1].innerHTML = " E S"
     }
 
-    if (1500.1 < scrollY && scrollY < 2250){
+    if (-550 < document.getElementById('logos').getBoundingClientRect().y
+    && document.getElementById('logos').getBoundingClientRect().y < 275){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });
@@ -232,10 +237,11 @@ window.onscroll = function(){
         items[2].style.borderBottomStyle = 'groove';
         items[2].innerHTML = " Coding Languages"
     }else{
-        items[2].innerHTML = " C L"
+        //items[2].innerHTML = " C L"
     }
 
-    if (2250.1 < scrollY ){
+    if (
+     document.getElementById('projects').getBoundingClientRect().y < 275 ){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });
@@ -243,7 +249,7 @@ window.onscroll = function(){
         items[3].style.borderBottomStyle = 'groove';
         items[3].innerHTML = " Recent Projects"
     }else{
-        items[3].innerHTML = " R P "
+        //items[3].innerHTML = " R P "
     }
 
 

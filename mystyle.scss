@@ -65,6 +65,8 @@ body{
         flex-direction: row;
         flex: 1;
 
+        
+
     }
 
     .items{
@@ -73,9 +75,12 @@ body{
         
         color: white;
         font-size: 0.7rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        margin-left: 3%;
+
+        //height: fit-content;
+        padding-bottom: inherit;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+        margin-left: 2%;
         
         
     }
@@ -102,9 +107,9 @@ body{
         justify-content: space-between;
         display: flex;
         align-items: center;
-        
+        //max-width: 20ch;
 
-        padding: 2.5%;
+        margin-right: 5%;
         
         text-decoration: underline;
         cursor: pointer;
@@ -584,11 +589,11 @@ body{
         
         position: absolute;
         left: 5%;
-        bottom: 15%;
+        bottom: 10%;
         
         justify-content: space-evenly;
         box-shadow: drop (1px 2px 2px);
-        
+    
         height: 20%;
         
         z-index: 2;
@@ -627,7 +632,7 @@ body{
         width: 100%;
         bottom: 0;
         color: darkgray;
-        font-size:small;
+        font-size:0.5rem;
         
     }
 
@@ -646,7 +651,9 @@ body{
 
     .header{
         .items{
-            font-size: 0.1rem;
+            font-size: 1.2vw;
+            border: 1px solid red;
+            
         }
 
     }

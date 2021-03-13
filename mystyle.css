@@ -64,9 +64,10 @@ body .grad-head {
 .header .items {
   color: white;
   font-size: 0.7rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  margin-left: 3%;
+  padding-bottom: inherit;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  margin-left: 2%;
 }
 
 .header .items:not(#mylogo):not(#contactme):not(#my-name) {
@@ -92,7 +93,7 @@ body .grad-head {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5%;
+  margin-right: 5%;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -505,7 +506,7 @@ body .grad-head {
           flex-direction: column;
   position: absolute;
   left: 5%;
-  bottom: 15%;
+  bottom: 10%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -542,7 +543,7 @@ body .grad-head {
   width: 100%;
   bottom: 0;
   color: darkgray;
-  font-size: small;
+  font-size: 0.5rem;
 }
 
 .draganddrop .hint {
@@ -553,7 +554,8 @@ body .grad-head {
 
 @media screen and (max-width: 1000px) {
   .header .items {
-    font-size: 0.1rem;
+    font-size: 1.2vw;
+    border: 1px solid red;
   }
   .firstpage h1 {
     margin-top: 30%;
