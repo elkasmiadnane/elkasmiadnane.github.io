@@ -586,11 +586,7 @@ body .grad-head {
     margin-top: 5%;
   }
   .projects #Sysid {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    left: 0%;
-    right: 0%;
+    margin-left: 5%;
     width: 30ch;
   }
   .projects #androidproject {
@@ -598,11 +594,7 @@ body .grad-head {
     width: 30ch;
   }
   .projects #pythonproject {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    left: 0%;
-    right: 0%;
+    margin-left: 5%;
     width: 30ch;
   }
   .projects #pythonproject img {

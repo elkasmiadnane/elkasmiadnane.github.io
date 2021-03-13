@@ -176,8 +176,7 @@ chargetext = async function ( ){
 } 
 
 window.onload = ()=>{
-    //document.getElementById('mylogo').style.opacity = '0';
-
+    
     document.getElementById('mainpage').style.borderBottomStyle = "groove";
 
     setTimeout(function(){
@@ -200,7 +199,7 @@ window.onload = ()=>{
 
 window.onscroll = function(){
 
-    console.log(scrollY)
+    
 
     if ( scrollY < 700){
         items.forEach(element => {
@@ -212,7 +211,7 @@ window.onscroll = function(){
         items[0].style.borderBottomStyle = 'hidden';
     }
 
-    if (700 < scrollY && scrollY < 1500){
+    if (700.1 < scrollY && scrollY < 1500){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });
@@ -225,7 +224,7 @@ window.onscroll = function(){
         items[1].innerHTML = " E S"
     }
 
-    if (1500 < scrollY && scrollY < 2250){
+    if (1500.1 < scrollY && scrollY < 2250){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });
@@ -236,7 +235,7 @@ window.onscroll = function(){
         items[2].innerHTML = " C L"
     }
 
-    if (2250 < scrollY ){
+    if (2250.1 < scrollY ){
         items.forEach(element => {
             element.style.borderBottomStyle = 'hidden';
         });

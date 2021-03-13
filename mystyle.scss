@@ -12,8 +12,6 @@ body{
     
     box-sizing: border-box;
 
-    //background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
-
     background-color: #060d20;
     
     
@@ -42,13 +40,13 @@ body{
     display: flex;
     align-items:center;
     position: relative;
-    //justify-content:space-between;
+    
     position: fixed;
     z-index: 2; 
     background-color:  #0d162b;
     height: 7vh;
     width: 100%;
-    //border:1px solid hotpink;
+    
 
    
 
@@ -79,11 +77,6 @@ body{
         padding-top: 1rem;
         margin-left: 3%;
         
-        //border: 1px solid red ;
-
-        
-        
-        
         
     }
 
@@ -93,9 +86,7 @@ body{
         border-bottom: 2px solid whitesmoke;
 
         border-bottom-style:hidden;
-        
-        
-        
+
         
     }
 
@@ -107,7 +98,6 @@ body{
     
     #contactme{
         
-        //position: absolute;
         z-index: 3;
         justify-content: space-between;
         display: flex;
@@ -129,7 +119,7 @@ body{
 
 .firstpage{
     display: flex;
-    //flex-direction: column;
+    
     height: fit-content;
     width: 100%;
 
@@ -164,7 +154,7 @@ body{
         margin-top: 20%;
         left: 5%;
         right: 5%;
-        //top: 20vh;
+        
         
         
         font-size: 1rem;
@@ -179,7 +169,7 @@ body{
 
         &_image{
             
-            //display: none;
+            
             height: 70px;
             width: 70px;
         }
@@ -191,7 +181,7 @@ body{
         width: 100%;
         margin-left : 20vw;
         margin-top: 5vh;
-        //display: none;
+        
     }
 }
 
@@ -705,9 +695,9 @@ body{
 
             
             
-            align-self: center;
-            left: 0%;
-            right: 0%;
+            margin-left: 5%;
+
+            
             
             width: 30ch;
             
@@ -732,9 +722,9 @@ body{
                 margin-top: 5%;
             }
             
-            align-self: center;
-            left: 0%;
-            right: 0%;
+            margin-left: 5%;
+
+            
             
             width: 30ch;
         }
