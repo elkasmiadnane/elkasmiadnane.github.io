@@ -122,10 +122,6 @@ body .grad-head {
   max-width: 50ch;
 }
 
-.firstpage_mytext span {
-  color: #50ac79;
-}
-
 .firstpage_mytext_image {
   display: none;
   height: 70px;
@@ -205,11 +201,14 @@ body .grad-head {
   background: #0d162b;
   color: white;
   position: absolute;
-  -webkit-transform: translate(0%, 50%);
-          transform: translate(0%, 50%);
+  -webkit-transform: translate(-20%, 20%);
+          transform: translate(-20%, 20%);
+  opacity: 0;
+  -webkit-transition: .7s opacity ease-in-out , .7s transform ease-in-out;
+  transition: .7s opacity ease-in-out , .7s transform ease-in-out;
   left: 10%;
   margin-top: 6%;
-  font-size: 0.9vw;
+  font-size: 1rem;
   padding: 10px;
   padding-left: 15px;
   line-height: 2.2;
@@ -222,8 +221,8 @@ body .grad-head {
 }
 
 .logos .animation {
-  margin-left: 30%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .logos h1 {
@@ -307,7 +306,7 @@ body .grad-head {
 }
 
 .draganddrop {
-  background-color: #1f2839;
+  background-color: #060d20;
   position: relative;
   height: 70vh;
   width: 100vw;
@@ -580,11 +579,36 @@ body .grad-head {
     margin-left: -5%;
     margin-top: 5%;
   }
+  .logos {
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logos .animation {
+    position: relative;
+  }
+  .logos h1 {
+    position: relative;
+    left: 20%;
+    right: 20%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    padding-bottom: 2%;
+  }
+  .logos .text {
+    left: 20%;
+    right: 20%;
+    position: relative;
+    margin-top: 0%;
+    font-size: 0.7rem;
+  }
   .robotics h1 {
     margin-left: 20%;
     margin-right: 20%;
   }
   .robotics .es {
+    font-size: 0.7rem;
     margin-left: 10%;
     margin-right: 20%;
   }

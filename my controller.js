@@ -117,7 +117,60 @@ gameimage.addEventListener('click' , ()=>{
     
 });
 
+const firstPText = document.getElementById('firstparagraph').textContent;
+const secondPText = document.getElementById('secondparagraph').textContent;
+const firstPhtml = document.getElementById('firstparagraph').innerHTML;
+const secondPhtml = document.getElementById('secondparagraph').innerHTML;
 
+
+
+let i = 0;
+let j = 0;
+
+
+
+    
+chargetext = async function ( ){
+    
+    if (i < firstPText.length){
+        
+        
+        document.getElementById('firstparagraph').innerHTML += firstPText.charAt(i) ;
+        
+        
+        i++;
+        setTimeout(chargetext,20);
+        
+    }
+
+    
+
+    
+
+    if (!(i < firstPText.length)){
+
+        
+        
+        if (j < secondPText.length){
+            
+
+            document.getElementById('secondparagraph').innerHTML += secondPText.charAt(j) ;
+        
+            
+            
+            j++;
+            setTimeout(chargetext,20);
+
+            setTimeout(() => {
+                document.getElementById('firstparagraph').innerHTML = firstPhtml;
+            }, 1000);
+            
+        }
+
+        
+    }
+
+} 
 
 window.onload = ()=>{
     document.getElementById('myname').style.opacity = '0';
@@ -128,6 +181,16 @@ window.onload = ()=>{
     },1000);
 
     
+    
+
+
+    setTimeout(function(){
+        document.getElementById('firstparagraph').innerHTML = "";
+        document.getElementById('secondparagraph').innerHTML = "";
+        
+        chargetext();
+    }, 1000);
+    
 }
 
 // function isembedInViewPort(function(document.getElementById('embeddedsystemstext')){
@@ -136,11 +199,32 @@ window.onload = ()=>{
 
 window.onscroll = function(){
 
-    console.log(document.getElementById('embeddedsystemstext').getBoundingClientRect().y);
+    //console.log(document.getElementById('embeddedsystemstext').getBoundingClientRect().y);
 
-    if (document.getElementById('embeddedsystemstext').getBoundingClientRect().y < 600){
+    if (document.getElementById('embeddedsystemstext').getBoundingClientRect().y < 500){
         document.getElementById('embeddedsystemstext').style.transform = 'translate(10%,0%)' ;
         document.getElementById('embeddedsystemstext').style.opacity = '1' ;
+        
+    }
+
+    if (document.getElementById('logostext').getBoundingClientRect().y < 500){
+        document.getElementById('logostext').style.transform = 'translate(0%,20%)' ;
+        document.getElementById('logostext').style.opacity = '1' ;
+        
+    }
+
+    if (document.getElementById('Sysid').getBoundingClientRect().y < 500){
+        document.getElementById('Sysid').style.clipPath = 'circle(100%)';
+        
+    }
+
+    if (document.getElementById('androidproject').getBoundingClientRect().y < 500){
+        document.getElementById('androidproject').style.clipPath = 'circle(100%)';
+        
+    }
+
+    if (document.getElementById('pythonproject').getBoundingClientRect().y < 500){
+        document.getElementById('pythonproject').style.clipPath = 'circle(100%)';
         
     }
     
@@ -152,15 +236,7 @@ window.onscroll = function(){
         document.getElementById('myname').style.opacity = '0';
     }
 
-    if(document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300){
-        document.getElementById('Sysid').style.clipPath = 'circle(100%)';
-    }
-    if(document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500){
-        document.getElementById('androidproject').style.clipPath = 'circle(100%)';
-    }
-    if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
-        document.getElementById('pythonproject').style.clipPath = 'circle(100%)';
-    }
+    
 };
 
 document.getElementById('contactme').addEventListener('click', ()=>{

@@ -137,16 +137,6 @@ body{
         
         max-width: 50ch;
 
-        
-
-        span{
-            color : #50ac79;
-        }
-
-
-    
-
-
         &_image{
             
             display: none;
@@ -254,12 +244,15 @@ body{
         }
     
         position: absolute;
-        transform: translate(0%, 50%);
+        transform: translate(-20%,20%);
+        opacity: 0;
+
+        transition: .7s opacity ease-in-out , .7s transform ease-in-out ;
 
         left: 10%;
         margin-top: 6%;
         
-        font-size: 0.9vw;
+        font-size: 1rem;
         padding: 10px;
         padding-left: 15px;
         
@@ -272,8 +265,10 @@ body{
     
    
     .animation{
-        margin-left: 30%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        
     }
     h1{
 
@@ -281,9 +276,7 @@ body{
         transform: translate(0%,0%);
         left: 10%;
         margin-top: 5%;
-        //font-size: 3vw;
-        //font-weight: 500;
-        //color: #FFFFFF;
+        
     }
 
     
@@ -368,7 +361,7 @@ body{
 }
 .draganddrop{
     
-    background-color: #1f2839;
+    background-color: #060d20;
     position: relative;
     
     height: 70vh;
@@ -700,36 +693,41 @@ body{
     }
 
     .logos{
+
+        position: relative;
+        align-items: center;
         .animation{
-            //margin-left: 10%;
-            //margin-right: 10%;
-            //bottom: 20%;
+            position: relative;
+            
+            
+        }
+
+        h1{
+            position: relative;
+            left: 20%;
+            right: 20%;
+            
+            transform: translate(0%,0%);
+            padding-bottom: 2%;
+        }
+        .text{
+            left: 20%;
+            right: 20%;
+            position: relative;
+            margin-top: 0%;
+            
+            font-size: 0.7rem;
         }
     }
 
     .robotics{
-        // position: relative;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // h1{
-        //     position: relative;
-        //     left: 30vw;
-        // }
-        // .es{
-        //     transform: translate(0%,0%);
-        //     left: 0%;
-        //     position: relative;
-        //     //left: 30vw;
-        //     font-size: 2vw;
-        //     // width: 30ch;
-            
-        // }
+        
         h1{
             margin-left: 20%;
             margin-right: 20%;
         }
         .es{
+            font-size: 0.7rem;
             margin-left: 10%;
             margin-right: 20%;
         }
