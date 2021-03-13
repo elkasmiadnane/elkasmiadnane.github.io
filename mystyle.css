@@ -117,7 +117,6 @@ body .grad-head {
   position: absolute;
   margin-top: 15%;
   margin-left: 10%;
-  border: 2px solid  #060d20;
 }
 
 .firstpage_mytext {
@@ -343,16 +342,15 @@ body .grad-head {
 }
 
 .draganddrop .rules {
+  position: relative;
   margin-top: 2vh;
   color: white;
+  font-size: 0.8rem;
 }
 
 .draganddrop .image {
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  top: 40%;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
   background-image: url("pngs/bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -550,6 +548,7 @@ body .grad-head {
 .draganddrop .hint {
   margin-top: 9rem;
   color: white;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 1000px) {
