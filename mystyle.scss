@@ -40,49 +40,66 @@ body{
 .header{
     display: flex;
     align-items:center;
+    justify-content:center;
     position: fixed;
     z-index: 2; 
-    background-color: #1f2839;
+    background-color:  #0d162b;
     height: 7vh;
     width: 100vw;
-    color: black;
-    font-size:small;
 
-    .myname{
-        margin-left: 2vw;
+   
+
+    img{
+        height: 2rem;
+        //width: rem;
         
-        img{
-            height: 2rem;
-            //width: rem;
-            
-            
-        }
+        
+    }
+    
+
+    .items{
+        
+        color: white;
+        font-size: 0.7rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        margin-left: 3%;
+        margin-right: 1%;
+        
+        
+        //border: 1px solid red;
+        
     }
 
-    .name{
-        position: absolute;
-        margin-left: 12%;
-        color: white;
-        font-size: 1rem;
+    .items:not(#mylogo):not(#my-name){
+        flex: 1;
+    }
+
+    #my-name{
+        flex: 2;
+        border-right:.2px solid #fdf6e733;
+    }
+    #mylogo{
+        flex: .5;
         
     }
     #contactme{
-        color: white;
-        position: absolute;
+        
+        //position: absolute;
         z-index: 3;
         justify-content: space-evenly;
         display: flex;
         align-items: flex-end;
         width: 9rem;
-        font-size: 1rem;
+
         padding: 0.5%;
         right: 5vw;
         text-decoration: underline;
         cursor: pointer;
-        
+
         img{
-            height: 20px;
-            width: 20px;
+            height: 15px;
+            width: 15px;
         }   
     }
 }
@@ -102,7 +119,7 @@ body{
         
         border: 2px solid  #060d20 ;
 
-        color: transparent;
+       
         
 
     }
@@ -112,7 +129,7 @@ body{
         background-color: #0d162b;
         color: white;
 
-        border:0.1px solid rgba(253, 245, 230, 0.2);
+        border:0.1px solid #fdf6e733;
         border-radius: 5px;
     
         position: absolute;
@@ -295,9 +312,8 @@ body{
 
     h1{
         align-self: center;
-        font-size: 1.3vw;
-        font-weight: 500;
-        color: white;
+        
+        margin-bottom: 30px;
         
     }
     
@@ -307,17 +323,17 @@ body{
         
         
         transition: height .5s ease-in-out;
-        font-style: oblique;
+        
     }
     .project{
         
         width: 30rem;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
        
         padding: 1.5rem;
         border-radius: 15px;
 
-        clip-path: circle(7% at 8% 18%);
+        clip-path: circle(7% at 8% 40px);
         transition: clip-path 1s ease-in-out;
         &:hover{
             clip-path: circle(100%);
@@ -329,7 +345,7 @@ body{
     }
 
     .animation{
-        //position: absolute;
+        
 
         display: none;
         
@@ -614,20 +630,21 @@ body{
 @media screen and (max-width : 1000px ){
 
     .header{
-        .name{
-            font-size: 0.5rem;
+        .items{
+            font-size: 0.1rem;
         }
+    }
 
-        #contactme{
-            font-size: 0.5rem;
-        }
+
+    .items:not(#mylogo):not(#my-name){
+        flex: 0;
     }
 
     .firstpage{
 
         h1{
             margin-top: 30%;
-            font-size: 1rem;
+            font-size: 1.4rem;
             
         }
         &_mytext{
@@ -643,16 +660,21 @@ body{
         }
         .animation{
             margin-top: 6vh;
-            margin-bottom: 40vh;
+            margin-bottom: 30vh;
         }
     } 
     .projects{
+
+        .project{
+            clip-path: circle(7% at 8.3% 53px);
+        }
         h1{
-            font-size: 3vw;
+            font-size: 1.2rem;
+            
         }
         img{
             margin-left: -5%;
-            margin-top: 1%;
+            margin-top: 5%;
         }
         
         #Sysid{

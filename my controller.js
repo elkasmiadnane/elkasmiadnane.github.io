@@ -173,7 +173,7 @@ chargetext = async function ( ){
 } 
 
 window.onload = ()=>{
-    document.getElementById('myname').style.opacity = '0';
+    //document.getElementById('mylogo').style.opacity = '0';
 
     setTimeout(function(){
         document.getElementById('firstpagemytext').style.transform = 'translate(0%,0%)';
@@ -193,13 +193,9 @@ window.onload = ()=>{
     
 }
 
-// function isembedInViewPort(function(document.getElementById('embeddedsystemstext')){
-
-// }
-
 window.onscroll = function(){
 
-    //console.log(document.getElementById('embeddedsystemstext').getBoundingClientRect().y);
+    
 
     if (document.getElementById('embeddedsystemstext').getBoundingClientRect().y < 500){
         document.getElementById('embeddedsystemstext').style.transform = 'translate(10%,0%)' ;
@@ -227,14 +223,7 @@ window.onscroll = function(){
         document.getElementById('pythonproject').style.clipPath = 'circle(100%)';
         
     }
-    
 
-    if(document.body.scrollTop > 430 || document.documentElement.scrollTop > 300){
-        document.getElementById('myname').style.opacity = '100';
-    }
-    else{
-        document.getElementById('myname').style.opacity = '0';
-    }
 
     
 };
