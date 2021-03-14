@@ -159,13 +159,16 @@ body .grad-head {
 
 .robotics {
   background-color: #0d162b;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -216,6 +219,9 @@ body .grad-head {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .logos .text {
@@ -244,6 +250,10 @@ body .grad-head {
 }
 
 .logos .animation {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
   margin-left: 10%;
   margin-right: 10%;
 }
